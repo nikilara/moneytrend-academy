@@ -1,0 +1,21 @@
+{
+  "icon": "cap",
+  "size": 320,
+  "samples": 48,
+  "fps": 24,
+  "frame_count": 96,
+  "duration_seconds": 4.0,
+  "normalization": {
+    "scale": 1.1993429587551447,
+    "original_projected_span": 0.6837076867913721
+  },
+  "pose_closure_error": 0.0,
+  "renderer": "Blender 4.3 Cycles CPU",
+  "external_assets": false,
+  "format": "Animated WebP with alpha",
+  "loop_count": 0,
+  "sound": false,
+  "original_geometry": true,
+  "postprocess": "Gentle spatial render denoising; alpha retained",
+  "poster_frame": 36
+}

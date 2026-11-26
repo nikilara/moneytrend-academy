@@ -1,0 +1,69 @@
+.icons-preview-page{min-width:0}
+.icons-preview-page .preview-wrap{width:min(1496px,calc(100% - 48px));margin-inline:auto}
+.preview-heading{padding-block:36px 26px}
+.preview-brand{display:inline-flex;align-items:center;gap:12px;font-size:18px;font-weight:500;letter-spacing:1.3px;margin-bottom:30px}
+.preview-brand img{display:block;flex:0 0 auto;border-radius:50%}
+.preview-brand b{color:var(--green);font-weight:500}
+.preview-heading>.eyebrow{margin-bottom:14px;letter-spacing:1.8px}
+.preview-heading h1{font-size:clamp(30px,3.8vw,48px);font-weight:600;line-height:1.2;letter-spacing:-1px;margin:0 0 18px}
+.preview-note{color:var(--muted);font-size:14px;line-height:1.8;max-width:770px;margin:0}
+.preview-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+.preview-controls[hidden]{display:none}
+.preview-control-group{display:flex;flex-wrap:wrap;gap:5px;padding:5px;border:1px solid var(--line);border-radius:12px;background:#16192a}
+.preview-controls button{border:1px solid transparent;border-radius:8px;background:transparent;color:var(--muted);font-size:12px;font-weight:500;line-height:1.5;min-height:44px;padding:10px 14px;transition:background .15s,color .15s,border-color .15s}
+.preview-controls button:hover{background:#c49aff12;color:var(--text)}
+.preview-controls button[aria-pressed=true]{background:#bdff6618;border-color:#bdff6655;color:var(--green)}
+.preview-controls .preview-motion-toggle{border:1px solid #c49aff66;border-radius:10px;background:#c49aff0a;color:var(--text)}
+.preview-controls .preview-motion-toggle[aria-pressed=true]{background:#c49aff18;border-color:#c49aff99;color:var(--text)}
+.preview-status-row{display:flex;align-items:start;justify-content:space-between;gap:16px;margin-bottom:7px}
+.preview-status-row p,.preview-status-row output{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+.preview-status-row output{flex:0 0 auto;white-space:nowrap}
+.preview-width-note{font-size:11px;line-height:1.7;color:#a9b4cc;margin:0 0 20px}
+.preview-asset-warning{color:#ffe3b8;border:1px solid #e6c17c55;background:#e6c17c0a;border-radius:10px;padding:14px 16px;font-size:13px}
+.preview-frame{width:100%;max-width:100%;margin-inline:auto;border:1px solid #c49aff2e;border-radius:20px;background:#11132366;overflow:hidden;min-width:0}
+.preview-frame #trading-benefits{padding-block:40px}
+.preview-frame #trading-benefits .trading-benefit-card{display:grid;grid-template-columns:152px minmax(0,1fr);align-items:start;gap:22px}
+.preview-frame #trading-benefits .benefit-art{display:flex;align-items:center;justify-content:center;width:152px;height:152px;max-width:100%;padding:5px;border:1px solid #c49aff2e;border-radius:22px;background:radial-gradient(ellipse at 15% 10%,#c49aff30,transparent 65%),radial-gradient(ellipse at 90% 90%,#bdff6624,transparent 65%),radial-gradient(ellipse at 90% 5%,#dec0801c,transparent 55%),linear-gradient(145deg,#21263d,#142a2b);box-shadow:inset 0 1px 0 #ffffff0a}
+.preview-frame #trading-benefits .benefit-copy{min-width:0}
+.preview-frame #trading-benefits .benefit-icon{display:block;flex:none;max-width:100%;aspect-ratio:1;margin:0}
+.preview-frame #trading-benefits .benefit-icon img{display:block;width:100%;height:100%;object-fit:contain}
+.preview-frame[data-scale=large] #trading-benefits .benefit-icon{width:140px;height:140px}
+.preview-frame[data-scale=actual] #trading-benefits .trading-benefit-card{grid-template-columns:56px minmax(0,1fr);gap:18px}
+.preview-frame[data-scale=actual] #trading-benefits .benefit-art{width:56px;height:56px;padding:5px;border-radius:14px}
+.preview-frame[data-scale=actual] #trading-benefits .benefit-icon{width:30px;height:30px}
+.preview-frame[data-viewport=phone]{width:min(390px,100%);border-radius:24px}
+.preview-frame[data-viewport=phone] #trading-benefits{width:calc(100% - 36px);padding-block:30px}
+.preview-frame[data-viewport=phone] #trading-benefits>.eyebrow{justify-content:flex-start;font-size:9px;letter-spacing:1.6px;margin-bottom:16px}
+.preview-frame[data-viewport=phone] #trading-benefits>h2{font-size:30px;line-height:1.35;letter-spacing:-1px;text-align:left;margin-bottom:28px}
+.preview-frame[data-viewport=phone] #trading-benefits .trading-benefits-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+.preview-frame[data-viewport=phone] #trading-benefits .trading-benefit-card{padding:22px;grid-template-columns:minmax(0,1fr);gap:20px}
+.preview-frame[data-viewport=phone] #trading-benefits .benefit-icon{margin:0}
+.preview-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:26px 34px}
+.preview-footer p,.preview-footer a,.preview-noscript{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.preview-footer a{color:var(--green)}
+@media(min-width:701px) and (max-width:1100px){.preview-frame #trading-benefits .trading-benefits-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:700px){.icons-preview-page .preview-wrap{width:calc(100% - 28px)}.preview-heading{padding-block:25px 23px}.preview-brand{font-size:16px;margin-bottom:24px}.preview-heading h1{font-size:32px}.preview-heading>.eyebrow{font-size:8px;letter-spacing:1.3px}.preview-note{font-size:13px}.preview-controls{gap:10px}.preview-control-group{max-width:100%}.preview-controls button{font-size:11px;padding-inline:11px}.preview-status-row{flex-direction:column;gap:3px}.preview-width-note{margin-bottom:16px}.preview-frame #trading-benefits{padding-block:30px;width:calc(100% - 36px)}.preview-frame #trading-benefits>h2{font-size:30px}.preview-frame #trading-benefits .trading-benefit-card,.preview-frame[data-scale=actual] #trading-benefits .trading-benefit-card{padding:22px;grid-template-columns:minmax(0,1fr);gap:20px}.preview-footer{flex-direction:column;align-items:flex-start;padding-block:23px 30px;gap:12px}}
+@media(max-width:380px){.preview-heading h1{font-size:28px}.preview-controls button{font-size:10px;padding-inline:9px}.preview-frame #trading-benefits>h2,.preview-frame[data-viewport=phone] #trading-benefits>h2{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.preview-controls button{transition:none}}
+
+/* Phone preview: icon/title share a row; the description spans the card below. */
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits{width:calc(100% - 12px)}
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .trading-benefit-card{grid-template-columns:80px minmax(0,1fr);align-items:center;gap:14px 8px;padding:8px}
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .benefit-art{grid-column:1;grid-row:1;width:80px;height:80px;align-self:center}
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .benefit-icon{width:68px;height:68px}
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .benefit-copy{display:contents}
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .benefit-copy>h3{grid-column:2;grid-row:1;align-self:center;min-width:0;margin:0;overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
+.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .benefit-copy>p{grid-column:1 / -1;grid-row:2;min-width:0;margin:0}
+.icons-preview-page .preview-frame[data-viewport=phone][data-scale=actual] #trading-benefits .benefit-icon{width:30px;height:30px}
+@media(max-width:700px){
+ .icons-preview-page .preview-frame{width:calc(100% + 12px);max-width:none;margin-inline:-6px}
+ .icons-preview-page .preview-frame[data-viewport=phone]{width:min(390px,calc(100% + 12px));margin-inline:calc((100% - min(390px,calc(100% + 12px))) / 2)}
+ .icons-preview-page .preview-frame #trading-benefits{width:calc(100% - 12px)}
+ .icons-preview-page .preview-frame #trading-benefits .trading-benefit-card,.icons-preview-page .preview-frame[data-viewport=phone] #trading-benefits .trading-benefit-card{grid-template-columns:80px minmax(0,1fr);align-items:center;gap:14px 8px;padding:8px}
+ .icons-preview-page .preview-frame #trading-benefits .benefit-art{grid-column:1;grid-row:1;width:80px;height:80px;align-self:center}
+ .icons-preview-page .preview-frame #trading-benefits .benefit-icon{width:68px;height:68px}
+ .icons-preview-page .preview-frame #trading-benefits .benefit-copy{display:contents}
+ .icons-preview-page .preview-frame #trading-benefits .benefit-copy>h3{grid-column:2;grid-row:1;align-self:center;min-width:0;margin:0;overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
+ .icons-preview-page .preview-frame #trading-benefits .benefit-copy>p{grid-column:1 / -1;grid-row:2;min-width:0;margin:0}
+ .icons-preview-page .preview-frame[data-scale=actual] #trading-benefits .benefit-icon{width:30px;height:30px}
+}

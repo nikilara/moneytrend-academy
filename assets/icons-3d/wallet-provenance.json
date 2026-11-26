@@ -1,0 +1,21 @@
+{
+  "icon": "wallet",
+  "size": 320,
+  "samples": 48,
+  "fps": 24,
+  "frame_count": 96,
+  "duration_seconds": 4.0,
+  "normalization": {
+    "scale": 1.2459280792962977,
+    "original_projected_span": 0.6581439279088543
+  },
+  "pose_closure_error": 2.1784497816756954e-10,
+  "renderer": "Blender 4.3 Cycles CPU",
+  "external_assets": false,
+  "format": "Animated WebP with alpha",
+  "loop_count": 0,
+  "sound": false,
+  "original_geometry": true,
+  "postprocess": "Gentle spatial render denoising; alpha retained",
+  "poster_frame": 44
+}

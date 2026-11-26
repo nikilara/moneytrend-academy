@@ -1,0 +1,26 @@
+{
+  "icon": "chart",
+  "size": 320,
+  "samples": 48,
+  "fps": 24,
+  "frame_count": 96,
+  "duration_seconds": 4.0,
+  "normalization": {
+    "scale": 1.1619648144779204,
+    "original_projected_span": 0.7057012310380777
+  },
+  "pose_closure_error": 0.0,
+  "renderer": "Blender 4.3 Cycles CPU",
+  "external_assets": false,
+  "format": "Animated WebP with alpha",
+  "loop_count": 0,
+  "sound": false,
+  "original_geometry": true,
+  "postprocess": "Gentle spatial render denoising; alpha retained",
+  "poster_frame": 60,
+  "completion": {
+    "existing_frames_preserved": 63,
+    "missing_frames_rendered": 33,
+    "re_rendered_ready_frames": 0
+  }
+}

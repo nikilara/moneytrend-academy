@@ -1,0 +1,17 @@
+/* Compact centered transitions; the adjacent existing journey-divider supplies the line and green accent. */
+.text-transition{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;margin-top:-36px;margin-bottom:0;padding-block:16px}
+.text-transition-title,.text-transition-description{width:100%;min-width:0;margin:0;overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
+.text-transition-title{font-size:1.125rem;font-weight:500;line-height:1.45;letter-spacing:-.25px;color:var(--green)}
+.text-transition-description{max-width:66rem;font-size:1rem;line-height:1.6;color:var(--muted)}
+@media(max-width:900px){.text-transition{margin-top:-28px}}
+@media(max-width:700px){.text-transition{margin-top:-22px}}
+
+/* Match the existing lower divider at the top, without changing layout. */
+#transition-to-reviews,#transition-to-learning{position:relative}
+#transition-to-reviews:before,#transition-to-learning:before{content:'';position:absolute;top:0;left:50%;width:min(100%,1280px);height:2px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#b698e14a 25%,#a9dc784a 75%,transparent);pointer-events:none}
+#transition-to-reviews:after,#transition-to-learning:after{content:'';position:absolute;top:-2px;left:calc(50% - 2px);width:4px;height:4px;border-radius:50%;background:#b0ce9a;box-shadow:0 0 10px #b598e13b;pointer-events:none}
+
+/* Reuse the hero button variants; only placement and the requested arrow accent are scoped here. */
+.text-transition>.button{max-width:100%;margin-top:12px;overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
+#transition-to-reviews>.glass>span{color:var(--green)}
+#transition-to-reviews+#community:before,#transition-to-learning+#programs:before{height:2px}

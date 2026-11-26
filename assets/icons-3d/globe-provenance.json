@@ -1,0 +1,21 @@
+{
+  "icon": "globe",
+  "size": 320,
+  "samples": 48,
+  "fps": 24,
+  "frame_count": 96,
+  "duration_seconds": 4.0,
+  "normalization": {
+    "scale": 1.472824295281039,
+    "original_projected_span": 0.5567534448116437
+  },
+  "pose_closure_error": 1.1920928955078125e-07,
+  "renderer": "Blender 4.3 Cycles CPU",
+  "external_assets": false,
+  "format": "Animated WebP with alpha",
+  "loop_count": 0,
+  "sound": false,
+  "original_geometry": true,
+  "postprocess": "Gentle spatial render denoising; alpha retained",
+  "poster_frame": 0
+}

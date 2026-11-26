@@ -1,0 +1,15 @@
+/* Approved 3D benefit component; all rules stay inside section 03. */
+#trading-benefits .trading-benefit-card{display:grid;grid-template-columns:152px minmax(0,1fr);align-items:start;gap:22px}
+#trading-benefits .benefit-art{display:flex;align-items:center;justify-content:center;width:152px;height:152px;max-width:100%;padding:5px;border:1px solid #c49aff2e;border-radius:22px;background:radial-gradient(ellipse at 15% 10%,#c49aff30,transparent 65%),radial-gradient(ellipse at 90% 90%,#bdff6624,transparent 65%),radial-gradient(ellipse at 90% 5%,#dec0801c,transparent 55%),linear-gradient(145deg,#21263d,#142a2b);box-shadow:inset 0 1px 0 #ffffff0a}
+#trading-benefits .benefit-copy{min-width:0}
+#trading-benefits .benefit-icon{display:block;flex:none;max-width:100%;aspect-ratio:1;margin:0;width:140px;height:140px}
+#trading-benefits .benefit-icon img{display:block;width:100%;height:100%;object-fit:contain}
+@media(min-width:701px) and (max-width:1100px){#trading-benefits .trading-benefits-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:700px){
+ #trading-benefits .trading-benefit-card{grid-template-columns:80px minmax(0,1fr);align-items:center;gap:14px 8px;padding:8px}
+ #trading-benefits .benefit-art{grid-column:1;grid-row:1;width:80px;height:80px;align-self:center}
+ #trading-benefits .benefit-icon{width:68px;height:68px}
+ #trading-benefits .benefit-copy{display:contents}
+ #trading-benefits .benefit-copy>h3{grid-column:2;grid-row:1;align-self:center;min-width:0;margin:0;overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
+ #trading-benefits .benefit-copy>p{grid-column:1 / -1;grid-row:2;min-width:0;margin:0}
+}

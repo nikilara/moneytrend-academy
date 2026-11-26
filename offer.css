@@ -1,0 +1,47 @@
+/* Legal document page; no selectors affect the main site. */
+.offer-page{min-width:0}
+.offer-shell{width:min(1080px,calc(100% - 96px));margin-inline:auto}
+.offer-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:28px}
+.offer-brand{min-width:0;font-family:'Onest',var(--font);font-size:24px;font-weight:500;letter-spacing:.8px}
+.offer-brand .brand-light{margin-left:0;font-weight:500}
+.offer-print{flex:0 0 auto;justify-content:center;gap:12px}
+.offer-print-icon{width:22px;height:22px;color:var(--green);flex:none}
+.offer-main{padding-bottom:48px}
+.offer-return-nav{max-width:880px;margin:0 auto 20px}
+.offer-return{min-height:48px;justify-content:center;gap:0;color:var(--green);border-color:#bdff6660}
+.offer-return:hover{border-color:var(--green)}
+.offer-document{max-width:880px;margin-inline:auto;padding:44px 48px;border:1px solid #c49aff55;border-radius:20px;background:linear-gradient(145deg,#24293de8,#152e2dd9);box-shadow:0 12px 45px #080e1b26}
+.offer-document h1{margin:0 0 14px;font-size:clamp(28px,3vw,38px);font-weight:600;line-height:1.3;letter-spacing:-.6px;hyphens:none;word-break:normal;overflow-wrap:normal}
+.offer-document h2{margin:32px 0 14px;color:var(--green);font-size:23px;font-weight:600;line-height:1.4;letter-spacing:normal;text-wrap:wrap;hyphens:none;word-break:normal;overflow-wrap:normal}
+.offer-document p{margin:0 0 18px;color:#d4e0ed;font-size:16px;line-height:1.85;white-space:pre-wrap;hyphens:none;word-break:normal;overflow-wrap:break-word}
+.offer-document .offer-revision{margin-bottom:30px;color:#b4c0d5;font-size:14px;line-height:1.7}
+.offer-document p:last-child{margin-bottom:0}
+@media(max-width:700px){
+  .offer-shell{width:calc(100% - 36px)}
+  .offer-header{flex-wrap:wrap;gap:16px;padding-block:20px}
+  .offer-brand{font-size:20px}
+  .offer-print{width:100%;min-height:48px;padding:12px 16px;font-size:14px}
+  .offer-main{padding-bottom:28px}
+  .offer-return{width:100%;padding:12px 16px}
+  .offer-document{padding:26px 20px;border-radius:16px}
+  .offer-document h1{font-size:28px}
+  .offer-document h2{font-size:21px;margin-top:28px}
+}
+@media(max-width:380px){
+  .offer-shell{width:calc(100% - 28px)}
+  .offer-brand{font-size:18px}
+  .offer-document h1{font-size:26px}
+}
+@page{size:A4;margin:18mm 16mm}
+@media print{
+  html{scroll-behavior:auto}
+  body.offer-page{margin:0;background:#fff!important;color:#111}
+  body.offer-page::before{display:none!important}
+  .offer-header,.offer-return-nav{display:none!important}
+  .offer-main.offer-shell{width:100%;max-width:none;margin:0;padding:0}
+  .offer-document{max-width:none;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+  .offer-document h1{margin:0 0 8pt;color:#111;font-size:20pt;line-height:1.3;letter-spacing:normal;break-after:avoid-page;page-break-after:avoid}
+  .offer-document h2{margin:16pt 0 7pt;color:#111;font-size:12.5pt;line-height:1.4;break-after:avoid-page;page-break-after:avoid}
+  .offer-document p{margin:0 0 9pt;color:#111;font-size:10.5pt;line-height:1.55;orphans:3;widows:3}
+  .offer-document .offer-revision{margin-bottom:14pt;color:#333;font-size:9.5pt;line-height:1.5;break-after:avoid-page;page-break-after:avoid}
+}

@@ -1,0 +1,59 @@
+/* Approved section 05 update. Preserve its existing grid, type sizes and controls. */
+#programs .tariff-standard,
+#programs .tariff-vip{--tariff-accent:var(--green)}
+#programs .tariff-family{--tariff-accent:var(--purple)}
+#programs .tariff-standard{border-color:#bdff665a}
+#programs .tariff-family{
+  background:radial-gradient(ellipse at 90% 0,#a778ff22,transparent 65%),linear-gradient(150deg,#30283f,#202333);
+  border-color:#c49aff7a;
+  box-shadow:0 0 26px #c49aff0a;
+}
+#programs .tariff-vip{
+  background:linear-gradient(145deg,#24382c,#172a30) padding-box,linear-gradient(145deg,#bdff6680,#bdff6626 52%,#bdff6666) border-box;
+  border-color:transparent;
+  box-shadow:0 10px 35px #bdff6613;
+}
+#programs .tariff-price,
+#programs .tariff-details summary,
+#programs .tariff-details summary::after,
+#programs .tariff-details h4,
+#programs .tariff-full-list li::before{color:var(--tariff-accent)}
+#programs .tariff-price-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+#programs .tariff-price-line .tariff-price-context{margin:0}
+#programs .tariff-price-context s{text-decoration-color:currentColor}
+
+#programs .tariff-benefits li{
+  display:grid;
+  grid-template-columns:20px minmax(0,1fr);
+  gap:10px;
+  align-items:start;
+  padding-left:0;
+}
+#programs .tariff-benefits li::before{content:none}
+#programs .tariff-feature-icon{display:block;width:20px;height:20px;margin-top:2px;color:var(--tariff-accent)}
+#programs .tariff-details-content>h4:first-child{margin-top:4px}
+#programs .tariff-module-list{list-style:none;margin:0;padding:0}
+#programs .tariff-module-list li{
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr);
+  align-items:baseline;
+  gap:10px;
+  padding:8px 0;
+  border-top:1px solid #bbccdd29;
+  color:#ccdae9;
+  font-size:14px;
+  line-height:1.7;
+  overflow-wrap:normal;
+  word-break:normal;
+  -webkit-hyphens:none;
+  hyphens:none;
+}
+#programs .tariff-module-number{color:var(--tariff-accent);font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* Retint the existing outline, solid and gradient buttons without resizing them. */
+#programs .tariff-standard .tariff-enroll{border-color:#bdff6670}
+#programs .tariff-standard .tariff-enroll:hover{background:#bdff6619}
+#programs .tariff-family .tariff-enroll{color:#281f2e;background:#c49aff;border-color:#d6baff}
+#programs .tariff-family .tariff-enroll:hover{background:#d9bcff}
+#programs .tariff-vip .tariff-enroll{color:#1c2a13;background:linear-gradient(115deg,#caff83,#adf755);border-color:#ceff98}
+#programs .tariff-vip .tariff-enroll:hover{background:#d3ffa4}
