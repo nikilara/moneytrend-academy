@@ -6,6 +6,7 @@
   const nav = document.getElementById('site-navigation');
   if (!header || !button || !panel || !nav) return;
   const compact = window.matchMedia('(max-width: 1100px)');
+  const mobile = window.matchMedia('(max-width: 700px)');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let open = false;
 
@@ -13,6 +14,9 @@
     document.documentElement.style.setProperty('--site-header-height', Math.ceil(header.getBoundingClientRect().height) + 'px');
   }
   function applyMode() {
+    // Never let mobile browsers retain a sticky header from a cached stylesheet.
+    header.style.position = mobile.matches ? 'static' : '';
+    header.style.top = mobile.matches ? 'auto' : '';
     if (!compact.matches) open = false;
     button.hidden = !compact.matches;
     panel.hidden = compact.matches && !open;
@@ -37,7 +41,8 @@
     if (!target) return;
     event.preventDefault();
     closeMenu();
-    const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - header.getBoundingClientRect().height - 16);
+    const offset = getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().height + 16 : 16;
+    const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
     if (window.location.hash !== hash) {
       try { window.history.pushState(null, '', hash); }
       catch { /* Embedded previews may restrict history; scrolling remains available. */ }
@@ -55,6 +60,8 @@
   document.addEventListener('pointerdown', event => {
     if (open && !header.contains(event.target)) closeMenu();
   });
+  if (mobile.addEventListener) mobile.addEventListener('change', applyMode);
+  else mobile.addListener(applyMode);
   if (compact.addEventListener) compact.addEventListener('change', applyMode);
   else compact.addListener(applyMode);
   window.addEventListener('resize', updateHeaderHeight);
