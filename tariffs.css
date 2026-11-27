@@ -65,3 +65,17 @@
 #programs .vip-gift{margin:12px 0 16px;padding:14px 16px;border-radius:14px;background:linear-gradient(105deg,#cdff83,#b5fa5e);color:#17250f;line-height:1.45;font-size:clamp(.88rem,1.05vw,1rem);box-shadow:0 6px 18px #baff5440}
 #programs .vip-gift-detail{padding:10px 0;color:#cae1b6;font-size:.9rem;line-height:1.5}
 @media(max-width:720px){#programs .tariff-vip #vip-title{font-size:1.45rem}#programs .vip-gift{margin:10px 0 14px;padding:12px}}
+
+/* Compact cards and keep disclosure fully visible above the button. */
+#programs .tariff-card{padding:22px 24px 22px}
+#programs .tariff-card-heading{margin-top:12px;min-height:0}
+#programs .tariff-description{min-height:0;margin-top:10px;line-height:1.65}
+#programs .tariff-price-block{min-height:0;padding:17px 0 14px}
+#programs .tariff-benefits{flex:0 0 auto;padding:17px 0 4px}
+#programs .tariff-benefits li{margin-bottom:10px;line-height:1.6}
+#programs .tariff-details{flex:0 0 auto;position:relative;z-index:1;min-height:49px;margin-top:10px;margin-bottom:16px}
+#programs .tariff-details summary{display:block;min-height:48px;padding:12px 34px 12px 0}
+#programs .tariff-details summary::after{right:3px;top:6px;z-index:2}
+#programs .vip-gift{flex:0 0 auto;margin:8px 0 6px;padding:12px 14px}
+#programs .tariff-enroll{flex:0 0 auto;margin-top:12px;min-height:50px}
+@media(max-width:720px){#programs .tariff-card{padding:20px}#programs .tariff-description{line-height:1.6}}
