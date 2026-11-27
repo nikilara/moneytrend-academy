@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="text-transitions.css?v=4">
 <link rel="stylesheet" href="footer.css?v=6">
 <link rel="stylesheet" href="tariffs.css?v=6">
+<link rel="stylesheet" href="cookie-consent.css?v=1">
+<script defer src="cookie-consent.js?v=1"></script>
 <script defer src="app.js?v=16"></script>
 <script type="module" src="futures.js?v=10"></script>
 <script type="module" src="compound.js?v=24"></script>
@@ -122,4 +124,9 @@
 </footer>
 <dialog id="quiz" aria-labelledby="quiz-title"><button class="close-dialog" type="button" aria-label="Закрыть подбор программы">×</button><p class="eyebrow">ПОДБОР ПРОГРАММЫ</p><h2 id="quiz-title">Какой формат вам ближе?</h2><p class="quiz-hint">Выберите ситуацию, которая вам подходит</p><div id="quiz-choices"><button type="button" data-choice="standard"><span>01</span> Я новичок и хочу научиться трейдингу с нуля. <b>↗</b></button><button type="button" data-choice="family"><span>02</span> Хочу учиться вместе с другом или подругой. <b>↗</b></button><button type="button" data-choice="vip"><span>03</span> Хочу полностью индивидуальное обучение. <b>↗</b></button><button type="button" data-choice="start"><span>04</span> Хочу разобраться, как работать на криптобирже. <b>↗</b></button><button type="button" data-choice="practice"><span>05</span> Уже торгую, но пока не получается добиться стабильных результатов. <b>↗</b></button></div><div id="quiz-result" hidden aria-live="polite"><p id="quiz-result-copy"></p><a class="button primary" id="quiz-course-link" href="#start">Посмотреть формат <span>→</span></a><button class="inline-button" id="quiz-reset" type="button">Выбрать другой ответ</button></div></dialog>
 <dialog class="evidence-viewer" id="evidence-viewer" aria-labelledby="evidence-viewer-title"><div class="evidence-toolbar"><h3 id="evidence-viewer-title">Скриншот</h3><button class="evidence-close" id="evidence-close" type="button" aria-label="Закрыть просмотр">×</button></div><div class="evidence-stage"><button class="evidence-arrow" id="evidence-prev" type="button" aria-label="Предыдущий скриншот">‹</button><div class="evidence-image-scroll" id="evidence-image-scroll" tabindex="0" role="region" aria-label="Изображение скриншота"><img id="evidence-full-image" class="evidence-full-image" alt=""></div><button class="evidence-arrow" id="evidence-next" type="button" aria-label="Следующий скриншот">›</button></div><div class="evidence-viewer-footer"><span id="evidence-counter" aria-live="polite"></span><button id="evidence-zoom" type="button" aria-pressed="false">Увеличить</button><a id="evidence-original" href="assets/community/review-01.jpg" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></dialog>
+<aside class="cookie-consent" id="cookie-consent" aria-labelledby="cookie-consent-title" hidden>
+  <div class="cookie-consent-copy"><strong id="cookie-consent-title">Настройки cookie</strong><p>Мы используем Яндекс Метрику для статистики посещений только с вашего согласия. Вы можете отказаться — сайт продолжит работать. <a href="privacy.html" target="_blank" rel="noopener noreferrer">Подробнее о данных</a>.</p></div>
+  <div class="cookie-consent-actions"><button class="cookie-consent-reject" type="button" data-cookie-choice="reject">Отклонить</button><button class="cookie-consent-accept" type="button" data-cookie-choice="accept">Принять</button></div>
+</aside>
+<button class="cookie-settings" id="cookie-settings" type="button" aria-controls="cookie-consent" hidden>Настройки cookie</button>
 </body></html>
