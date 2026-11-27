@@ -15,8 +15,8 @@
   }
   function applyMode() {
     // Never let mobile browsers retain a sticky header from a cached stylesheet.
-    header.style.position = 'static';
-    header.style.top = 'auto';
+    header.style.position = mobile.matches ? 'static' : '';
+    header.style.top = mobile.matches ? 'auto' : '';
     if (!compact.matches) open = false;
     button.hidden = !compact.matches;
     panel.hidden = compact.matches && !open;
