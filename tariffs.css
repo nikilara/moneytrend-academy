@@ -79,3 +79,11 @@
 #programs .vip-gift{flex:0 0 auto;margin:8px 0 6px;padding:12px 14px}
 #programs .tariff-enroll{flex:0 0 auto;margin-top:12px;min-height:50px}
 @media(max-width:720px){#programs .tariff-card{padding:20px}#programs .tariff-description{line-height:1.6}}
+
+/* Align three course names and all course descriptions on one baseline. */
+#programs .tariff-card-heading{margin-top:0;min-height:0}
+#programs .tariff-card-heading>h3{display:flex;align-items:center;min-height:64px;padding:0;margin:0}
+#programs .tariff-vip #vip-title{min-height:64px;padding:10px 14px}
+#programs .tariff-description{min-height:94px;margin-top:11px}
+@media(max-width:1100px){#programs .tariff-description{min-height:125px}}
+@media(max-width:850px){#programs .tariff-description{min-height:0}#programs .tariff-card-heading>h3,#programs .tariff-vip #vip-title{min-height:56px}}
