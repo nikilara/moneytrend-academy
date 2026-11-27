@@ -87,3 +87,16 @@
 #programs .tariff-description{min-height:94px;margin-top:11px}
 @media(max-width:1100px){#programs .tariff-description{min-height:125px}}
 @media(max-width:850px){#programs .tariff-description{min-height:0}#programs .tariff-card-heading>h3,#programs .tariff-vip #vip-title{min-height:56px}}
+
+/* Final compact tariff layout: baseline-aligned pricing, benefits and actions. */
+#programs .tariff-card{padding:20px 24px 21px}
+#programs .tariff-description{line-height:1.5;min-height:82px;margin-top:6px}
+#programs .tariff-price-block{padding:9px 0 10px}
+#programs .tariff-benefits{padding:12px 0 0}
+#programs .tariff-benefits li{margin-bottom:7px;line-height:1.48}
+#programs .tariff-benefits .vip-gift-benefit{color:#cde9d4}
+#programs .tariff-benefits .vip-gift-benefit strong{color:#baff69;font-weight:700}
+#programs .tariff-details{margin-top:auto;margin-bottom:8px}
+#programs .tariff-enroll{margin-top:8px}
+@media(max-width:1100px){#programs .tariff-description{min-height:104px}}
+@media(max-width:850px){#programs .tariff-description{min-height:0}#programs .tariff-details{margin-top:12px}}
