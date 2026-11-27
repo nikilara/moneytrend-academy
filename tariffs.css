@@ -100,3 +100,8 @@
 #programs .tariff-enroll{margin-top:8px}
 @media(max-width:1100px){#programs .tariff-description{min-height:104px}}
 @media(max-width:850px){#programs .tariff-description{min-height:0}#programs .tariff-details{margin-top:12px}}
+
+/* Keep closed pricing cards aligned, but never stretch neighbours when any details open. */
+#programs .tariff-grid:has(.tariff-details[open]){align-items:start}
+#programs .tariff-grid:has(.tariff-details[open]) .tariff-card{align-self:start}
+#programs .tariff-grid:has(.tariff-details[open]) .tariff-details{margin-top:12px}
