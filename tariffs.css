@@ -57,3 +57,11 @@
 #programs .tariff-family .tariff-enroll:hover{background:#d9bcff}
 #programs .tariff-vip .tariff-enroll{color:#1c2a13;background:linear-gradient(115deg,#caff83,#adf755);border-color:#ceff98}
 #programs .tariff-vip .tariff-enroll:hover{background:#d3ffa4}
+
+/* Course packaging refresh: preserve existing responsive grid and controls. */
+#programs .tariff-vip{border:2px solid #bcff69;box-shadow:0 0 28px #bcff6936,0 10px 35px #bdff6613;background:radial-gradient(ellipse at 100% 0,#7840bd4a,transparent 60%),linear-gradient(145deg,#1d2038,#1b2137)}
+#programs .tariff-vip #vip-title{display:block;padding:10px 14px;border-radius:12px;background:linear-gradient(110deg,#c5ff75,#aaff59 65%,#987ad5);color:#132015;font-size:clamp(1.5rem,2vw,2rem);letter-spacing:.015em}
+#programs .tariff-vip #vip-title span{font-size:1.1em}
+#programs .vip-gift{margin:12px 0 16px;padding:14px 16px;border-radius:14px;background:linear-gradient(105deg,#cdff83,#b5fa5e);color:#17250f;line-height:1.45;font-size:clamp(.88rem,1.05vw,1rem);box-shadow:0 6px 18px #baff5440}
+#programs .vip-gift-detail{padding:10px 0;color:#cae1b6;font-size:.9rem;line-height:1.5}
+@media(max-width:720px){#programs .tariff-vip #vip-title{font-size:1.45rem}#programs .vip-gift{margin:10px 0 14px;padding:12px}}
