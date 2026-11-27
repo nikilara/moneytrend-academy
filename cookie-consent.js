@@ -20,12 +20,14 @@
     window.ym.l = Date.now();
     const script = document.createElement('script');
     script.async = true;
-    script.src = 'https://mc.yandex.ru/metrika/tag.js';
+    script.src = 'https://mc.yandex.ru/metrika/tag.js?id=114719984';
     document.head.appendChild(script);
     window.ym(counterId, 'init', {
       ssr: true,
       webvisor: true,
       clickmap: true,
+      referrer: document.referrer,
+      url: location.href,
       trackLinks: true,
       accurateTrackBounce: true
     });
