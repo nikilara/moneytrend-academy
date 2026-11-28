@@ -569,11 +569,12 @@ html{scroll-padding-top:calc(var(--site-header-height,94px) + 16px)}.header{posi
   .hero-channel-link svg{color:var(--green);width:19px;height:19px}
 }
 
-/* Mobile hero: two primary choices side-by-side, Telegram invitation below. */
+
+/* Restore the comfortable stacked mobile buttons and framed Telegram link. */
 @media(max-width:700px){
-  .hero-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;gap:10px;width:calc(100% - 24px);max-width:420px;margin-inline:auto}
-  .hero-actions .button{width:100%;min-width:0;min-height:78px;height:100%;padding:12px 10px;gap:6px;font-size:11px;line-height:1.35;white-space:normal;text-align:left;overflow-wrap:normal}
-  .hero-actions .button span{flex:0 0 auto;font-size:17px}
-  .hero-channel-link{display:inline-flex;width:auto;max-width:calc(100% - 22px);margin-top:26px;padding:12px 10px;border:1px solid #bdff6670;border-radius:12px;background:#1e2839cc;box-shadow:0 0 24px #bdff6614;color:#f2f5f9;font-size:11px;font-weight:650;gap:7px;white-space:nowrap;text-decoration:none}
+  .hero-actions{display:flex;flex-direction:column;align-items:stretch;max-width:290px;width:auto;margin-inline:auto;gap:12px}
+  .hero-actions .button{width:auto;height:auto;min-height:53px;padding:14px 19px;gap:20px;font-size:12px;line-height:1.4;text-align:left}
+  .hero-actions .button span{font-size:22px}
+  .hero-channel-link{display:inline-flex;width:auto;max-width:calc(100% - 22px);margin-top:29px;padding:12px 10px;border:1px solid #bdff6670;border-radius:12px;background:#1e2839cc;box-shadow:0 0 24px #bdff6614;color:#f2f5f9;font-size:11px;font-weight:650;gap:7px;white-space:nowrap;text-decoration:none}
   .hero-channel-link:hover,.hero-channel-link:focus-visible{border:1px solid var(--green);border-radius:12px;background:#263a3c;box-shadow:0 0 24px #bdff6614;color:#fff;text-decoration:none}
 }
