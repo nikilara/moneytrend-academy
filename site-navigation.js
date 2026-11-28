@@ -14,9 +14,9 @@
     document.documentElement.style.setProperty('--site-header-height', Math.ceil(header.getBoundingClientRect().height) + 'px');
   }
   function applyMode() {
-    // Never let mobile browsers retain a sticky header from a cached stylesheet.
-    header.style.position = mobile.matches ? 'static' : '';
-    header.style.top = mobile.matches ? 'auto' : '';
+    // Keep the site header sticky on mobile as well as desktop.
+    header.style.position = '';
+    header.style.top = '';
     if (!compact.matches) open = false;
     button.hidden = !compact.matches;
     panel.hidden = compact.matches && !open;
