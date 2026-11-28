@@ -53,4 +53,20 @@
     settings.hidden = true;
     banner.querySelector('[data-cookie-choice="reject"]').focus();
   });
+}
+  // Track interest in each offering separately, only after analytics consent.
+  const offeringGoals = {
+    standard: 'mt_standard_click',
+    family: 'mt_family_click',
+    vip: 'mt_vip_click',
+    start: 'mt_exchange_click',
+    practice: 'mt_practice_click'
+  };
+  document.addEventListener('click', event => {
+    const link = event.target instanceof Element ? event.target.closest('a[href^="https://t.me/"]') : null;
+    if (!link || !started) return;
+    const card = link.closest('article[id]');
+    const goal = card && offeringGoals[card.id];
+    if (goal) window.ym(counterId, 'reachGoal', goal);
+  }, true);
 })();
