@@ -578,3 +578,10 @@ html{scroll-padding-top:calc(var(--site-header-height,94px) + 16px)}.header{posi
   .hero-channel-link{display:inline-flex;width:auto;max-width:calc(100% - 22px);margin-top:29px;padding:12px 10px;border:1px solid #bdff6670;border-radius:12px;background:#1e2839cc;box-shadow:0 0 24px #bdff6614;color:#f2f5f9;font-size:11px;font-weight:650;gap:7px;white-space:nowrap;text-decoration:none}
   .hero-channel-link:hover,.hero-channel-link:focus-visible{border:1px solid var(--green);border-radius:12px;background:#263a3c;box-shadow:0 0 24px #bdff6614;color:#fff;text-decoration:none}
 }
+
+/* Restore the original centered, content-sized mobile hero buttons. */
+@media(max-width:700px){
+  .hero-actions{display:flex;flex-direction:column;align-items:center;width:100%;max-width:none;margin-inline:auto;gap:12px}
+  .hero-actions .button{display:inline-flex;width:max-content;max-width:calc(100vw - 36px);min-height:53px;height:auto;justify-content:space-between;gap:18px;padding:14px 19px;font-size:12px;line-height:1.4;text-align:left;white-space:nowrap}
+  .hero-actions .button span{font-size:22px;flex:0 0 auto}
+}
