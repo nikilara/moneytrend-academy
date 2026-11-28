@@ -53,7 +53,6 @@
     settings.hidden = true;
     banner.querySelector('[data-cookie-choice="reject"]').focus();
   });
-}
   // Track interest in each offering separately, only after analytics consent.
   const offeringGoals = {
     standard: 'mt_standard_click',
