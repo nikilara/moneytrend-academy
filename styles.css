@@ -561,3 +561,10 @@ html{scroll-padding-top:calc(var(--site-header-height,94px) + 16px)}.header{posi
 @media(max-width:700px){.hero-channel-link{gap:7px;max-width:calc(100% - 20px);padding:12px 10px;font-size:11px;white-space:nowrap}.hero-channel-link .channel-label-desktop{display:none}.hero-channel-link .channel-label-mobile{display:inline}.hero-channel-link svg{width:18px;height:18px}}
 /* Site navigation stays below the iPhone browser chrome and above page content. */
 @media(max-width:700px){#site-header{position:sticky;top:0;z-index:80}html{scroll-padding-top:var(--site-header-height,80px)}}
+
+/* Mobile: Telegram is a lightweight text link, not a third button. */
+@media(max-width:700px){
+  .hero-channel-link{display:inline-flex;width:auto;max-width:calc(100% - 22px);margin-top:31px;padding:5px 0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#e6f2df;font-size:11px;font-weight:650;gap:7px;white-space:nowrap}
+  .hero-channel-link:hover,.hero-channel-link:focus-visible{border:0;background:transparent;box-shadow:none;color:var(--green);text-decoration:underline;text-underline-offset:4px}
+  .hero-channel-link svg{color:var(--green);width:19px;height:19px}
+}
