@@ -555,3 +555,9 @@ html{scroll-padding-top:calc(var(--site-header-height,94px) + 16px)}.header{posi
 .hero-channel-link{margin-top:38px;padding:13px 20px;border:1px solid #bdff6670;border-radius:12px;background:#1e2839cc;box-shadow:0 0 24px #bdff6614;color:#f2f5f9;font-size:15px}
 .hero-channel-link:hover,.hero-channel-link:focus-visible{border-color:var(--green);background:#263a3c;color:#fff}
 @media(max-width:700px){.hero-channel-link{margin-top:29px;padding:12px 14px;font-size:12px;max-width:calc(100% - 20px)}}
+
+/* Compact, single-line invitation on phones. */
+.channel-label-mobile{display:none}
+@media(max-width:700px){.hero-channel-link{gap:7px;max-width:calc(100% - 20px);padding:12px 10px;font-size:11px;white-space:nowrap}.hero-channel-link .channel-label-desktop{display:none}.hero-channel-link .channel-label-mobile{display:inline}.hero-channel-link svg{width:18px;height:18px}}
+/* Site navigation stays below the iPhone browser chrome and above page content. */
+@media(max-width:700px){#site-header{position:sticky;top:0;z-index:80}html{scroll-padding-top:var(--site-header-height,80px)}}
