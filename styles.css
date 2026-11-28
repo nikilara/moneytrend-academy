@@ -541,3 +541,12 @@ html{scroll-padding-top:calc(var(--site-header-height,94px) + 16px)}.header{posi
 }
 
 @media(max-width:700px){html{scroll-padding-top:20px}}
+
+/* Public Telegram channel CTAs: separate from personal contact links. */
+.hero-channel-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin:23px auto 0;color:#dce5f0;font-size:14px;font-weight:600;line-height:1.6;text-align:center;text-decoration:none;transition:color .2s}
+.hero-channel-link svg,.site-footer-channel svg{width:21px;height:21px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;color:var(--green)}
+.hero-channel-link:hover,.hero-channel-link:focus-visible{color:var(--green)}
+#site-footer .site-footer-channel{display:flex;align-items:center;justify-content:center;gap:9px;width:max-content;max-width:100%;margin:17px auto 0;padding:12px 14px;border:1px solid #c49aff55;border-radius:11px;background:#27263c88;color:#e5e4f5;font-size:12px;line-height:1.5;text-align:center;text-decoration:none;transition:background .2s,border-color .2s}
+#site-footer .site-footer-channel strong{font-weight:700;color:var(--green)}
+#site-footer .site-footer-channel:hover,#site-footer .site-footer-channel:focus-visible{background:#3a3355;border-color:var(--green)}
+@media(max-width:700px){.hero-channel-link{max-width:calc(100% - 30px);font-size:12px;gap:7px;margin-top:20px}.hero-channel-link svg{width:19px;height:19px}#site-footer .site-footer-channel{font-size:11px;padding:11px 9px;gap:6px}}
